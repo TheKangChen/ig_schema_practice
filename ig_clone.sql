@@ -56,8 +56,7 @@ CREATE TABLE tags
 (
     id INT PRIMARY KEY AUTO_INCREMENT,
     tag_name VARCHAR(255) UNIQUE,
-    created_at TIMESTAMP DEFAULT NOW(),
-    CONSTRAINT check_hashtag_in_text_start CHECK ( tag_name LIKE '#%')
+    created_at TIMESTAMP DEFAULT NOW()
 );
 
 CREATE TABLE photo_tags
